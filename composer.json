@@ -1,0 +1,14 @@
+{
+    "name": "arsoft-modules/master-item",
+    "description": "modul untuk mengelola data master item",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kalingrowo",
+            "email": "kalingrowo@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
