@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers;
 
+use ArsoftModules\NotaGenerator\NotaGenerator;
 use Illuminate\Http\Request;
 
 class MasterTestController extends Controller
 {
-    //--- nota generator
+    // --- start: nota generator
     public function generateNota(Request $request)
     {
-        return "oit nota : ";
+        $notaGenerator = new NotaGenerator();
+        $nota = $notaGenerator->generate('item');
+        return "generated nota " . $nota;
     }
+    // --- end: nota generator
+
+
 }

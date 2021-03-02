@@ -14,7 +14,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
-        "arsoft-modules/nota-generator": "main"
+        "arsoft-modules/nota-generator": "dev-main"
     },
     "repositories": [
         {

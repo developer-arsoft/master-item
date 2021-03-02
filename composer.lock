@@ -4,8 +4,45 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4a16c3c541bd99241cab1c21ce8e83ac",
+    "content-hash": "12b618e5991791206fa02633e753964b",
     "packages": [
+        {
+            "name": "arsoft-modules/nota-generator",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/developer-arsoft/nota-generator.git",
+                "reference": "30ccb2b582993bac3e0ced953a0a7ed05702e178"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/developer-arsoft/nota-generator/zipball/30ccb2b582993bac3e0ced953a0a7ed05702e178",
+                "reference": "30ccb2b582993bac3e0ced953a0a7ed05702e178",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ArsoftModules\\NotaGenerator\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kalingrowo",
+                    "email": "kalingrowo@gmail.com"
+                }
+            ],
+            "description": "nota generator using table and database",
+            "support": {
+                "source": "https://github.com/developer-arsoft/nota-generator/tree/main",
+                "issues": "https://github.com/developer-arsoft/nota-generator/issues"
+            },
+            "time": "2021-03-02T03:56:38+00:00"
+        },
         {
             "name": "asm89/stack-cors",
             "version": "v2.0.2",
@@ -7355,7 +7392,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "arsoft-modules/nota-generator": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
