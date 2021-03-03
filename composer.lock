@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/developer-arsoft/master-item.git",
-                "reference": "3dd4ebd9c36735b1188918bc8138d38b6c88e743"
+                "reference": "7c00b2c7fb2938f23fd63e7ff5685f760fc8fb55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/developer-arsoft/master-item/zipball/3dd4ebd9c36735b1188918bc8138d38b6c88e743",
-                "reference": "3dd4ebd9c36735b1188918bc8138d38b6c88e743",
+                "url": "https://api.github.com/repos/developer-arsoft/master-item/zipball/7c00b2c7fb2938f23fd63e7ff5685f760fc8fb55",
+                "reference": "7c00b2c7fb2938f23fd63e7ff5685f760fc8fb55",
                 "shasum": ""
             },
             "type": "library",
@@ -47,7 +47,7 @@
                 "source": "https://github.com/developer-arsoft/master-item/tree/main",
                 "issues": "https://github.com/developer-arsoft/master-item/issues"
             },
-            "time": "2021-03-03T04:04:44+00:00"
+            "time": "2021-03-03T07:11:36+00:00"
         },
         {
             "name": "asm89/stack-cors",

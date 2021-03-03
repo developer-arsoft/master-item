@@ -18,4 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('generate-nota', [MasterTestController::class, 'generateNota']);
+Route::get('items', [MasterTestController::class, 'getItems']);
+Route::post('items', [MasterTestController::class, 'storeItem']);
+Route::get('items/{id}', [MasterTestController::class, 'showItem']);
+Route::put('items/{id}', [MasterTestController::class, 'updateItem']);
+Route::delete('items/{id}', [MasterTestController::class, 'deleteItem']);
