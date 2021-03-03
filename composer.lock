@@ -12,23 +12,33 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/developer-arsoft/nota-generator.git",
-                "reference": "30ccb2b582993bac3e0ced953a0a7ed05702e178"
+                "reference": "ce783744a92dceaa986ea9ca21a8709df8bb4731"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/developer-arsoft/nota-generator/zipball/30ccb2b582993bac3e0ced953a0a7ed05702e178",
-                "reference": "30ccb2b582993bac3e0ced953a0a7ed05702e178",
+                "url": "https://api.github.com/repos/developer-arsoft/nota-generator/zipball/ce783744a92dceaa986ea9ca21a8709df8bb4731",
+                "reference": "ce783744a92dceaa986ea9ca21a8709df8bb4731",
                 "shasum": ""
             },
             "default-branch": true,
             "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "ArsoftModules\\NotaGenerator\\NotaGeneratorServiceProvider"
+                    ],
+                    "aliases": {
+                        "ArsNotaGenerator": "ArsoftModules\\NotaGenerator\\Facades\\NotaGenerator"
+                    }
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "ArsoftModules\\NotaGenerator\\": "src/"
                 }
             },
             "license": [
-                "MIT"
+                "-"
             ],
             "authors": [
                 {
@@ -41,7 +51,7 @@
                 "source": "https://github.com/developer-arsoft/nota-generator/tree/main",
                 "issues": "https://github.com/developer-arsoft/nota-generator/issues"
             },
-            "time": "2021-03-02T03:56:38+00:00"
+            "time": "2021-03-03T03:09:32+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -931,16 +941,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.29.0",
+            "version": "v8.30.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "d2eba352b3b3a3c515b18c5726b373fe5026733e"
+                "reference": "81ef9850cc388f2f92b868fb35ffb76f0c9a0f46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/d2eba352b3b3a3c515b18c5726b373fe5026733e",
-                "reference": "d2eba352b3b3a3c515b18c5726b373fe5026733e",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/81ef9850cc388f2f92b868fb35ffb76f0c9a0f46",
+                "reference": "81ef9850cc388f2f92b868fb35ffb76f0c9a0f46",
                 "shasum": ""
             },
             "require": {
@@ -1095,20 +1105,20 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-02-23T14:27:41+00:00"
+            "time": "2021-03-02T14:28:44+00:00"
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.6.0",
+            "version": "v2.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "daae1c43f1300fe88c05d83db6f3d8f76677ad88"
+                "reference": "04ad32c1a3328081097a181875733fa51f402083"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/daae1c43f1300fe88c05d83db6f3d8f76677ad88",
-                "reference": "daae1c43f1300fe88c05d83db6f3d8f76677ad88",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/04ad32c1a3328081097a181875733fa51f402083",
+                "reference": "04ad32c1a3328081097a181875733fa51f402083",
                 "shasum": ""
             },
             "require": {
@@ -1161,9 +1171,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.6.0"
+                "source": "https://github.com/laravel/tinker/tree/v2.6.1"
             },
-            "time": "2021-01-26T20:35:18+00:00"
+            "time": "2021-03-02T16:53:12+00:00"
         },
         {
             "name": "league/commonmark",
@@ -5342,16 +5352,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "0200ce6e0f697699bce036c42d91f1daab8039a8"
+                "reference": "67b76f430f8870f5a2384db5c87ff8321154e077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/0200ce6e0f697699bce036c42d91f1daab8039a8",
-                "reference": "0200ce6e0f697699bce036c42d91f1daab8039a8",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/67b76f430f8870f5a2384db5c87ff8321154e077",
+                "reference": "67b76f430f8870f5a2384db5c87ff8321154e077",
                 "shasum": ""
             },
             "require": {
@@ -5398,7 +5408,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-02-24T21:20:16+00:00"
+            "time": "2021-03-02T16:47:59+00:00"
         },
         {
             "name": "mockery/mockery",
