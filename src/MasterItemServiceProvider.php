@@ -22,6 +22,5 @@ class MasterItemServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('ArsoftModules\MasterItem\Controllers\MasterItemController');
     }
 }

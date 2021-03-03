@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "ArsoftModules\\MasterItem\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArsoftModules\\MasterItem\\MasterItemServiceProvider"
+            ]
+        }
+    },
     "require": {}
 }
