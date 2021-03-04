@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use ArsoftModules\Keuangan\Keuangan;
-use Illuminate\Http\Request;
+use Exception;
 use Illuminate\Support\Facades\DB;
 
 class MasterTestController extends Controller
