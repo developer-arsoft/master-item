@@ -2,26 +2,43 @@
 
 namespace App\Http\Controllers;
 
-use ArsoftModules\NotaGenerator\Facades\NotaGenerator;
+use ArsoftModules\Keuangan\Keuangan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class MasterTestController extends Controller
 {
-    // --- start: nota generator
-    public function generateNota(Request $request)
+    // --- start: test
+    public function laporanAsetEta()
     {
-        $nota = NotaGenerator::generate('orders', 'nota', 3)
-            ->addPrefix('ORDERS')
-            ->getResult();
-        
-        return "generated nota " . $nota;
-    }
-    // --- end: nota generator
+        DB::beginTransaction();
+        try {
+            $arsKeuangan = new Keuangan();
+            $reportAsetEta = $arsKeuangan->reportAsetEta(
+                'MB0000001',
+                '2020-03',
+                '2020-03',
+                'year'
+            );
 
-    // --- start: master items
-    public function listItems()
-    {
-        
+            if ($reportAsetEta->getStatus() !== 'success') {
+                throw new Exception($reportAsetEta->getErrorMessage(), 1);
+            }
+
+            $reportAsetEta = $reportAsetEta->getData();
+
+            DB::commit();
+            return response()->json([
+                'status' => 'success',
+                'data' => $reportAsetEta
+            ], 200);
+        } catch (\Throwable $th) {
+            DB::rollBack();
+            return response()->json([
+                'status' => 'error',
+                'message' => $th->getMessage()
+            ], 500);
+        }
     }
-    // --- end: master items
+    // --- end: test
 }

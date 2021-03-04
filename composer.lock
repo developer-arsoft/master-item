@@ -4,41 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "12b618e5991791206fa02633e753964b",
+    "content-hash": "9ce9864c800bc7a5fd564f2f0899338c",
     "packages": [
         {
-            "name": "arsoft-modules/nota-generator",
-            "version": "dev-main",
+            "name": "arsoft-modules/keuangan",
+            "version": "dev-mutiaraberlian",
             "source": {
                 "type": "git",
-                "url": "https://github.com/developer-arsoft/nota-generator.git",
-                "reference": "ce783744a92dceaa986ea9ca21a8709df8bb4731"
+                "url": "https://github.com/developer-arsoft/keuangan.git",
+                "reference": "f661e8025af811c5ba3db3b085c0858ee5f90b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/developer-arsoft/nota-generator/zipball/ce783744a92dceaa986ea9ca21a8709df8bb4731",
-                "reference": "ce783744a92dceaa986ea9ca21a8709df8bb4731",
+                "url": "https://api.github.com/repos/developer-arsoft/keuangan/zipball/f661e8025af811c5ba3db3b085c0858ee5f90b67",
+                "reference": "f661e8025af811c5ba3db3b085c0858ee5f90b67",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
                     "providers": [
-                        "ArsoftModules\\NotaGenerator\\NotaGeneratorServiceProvider"
-                    ],
-                    "aliases": {
-                        "ArsNotaGenerator": "ArsoftModules\\NotaGenerator\\Facades\\NotaGenerator"
-                    }
+                        "ArsoftModules\\Keuangan\\KeuanganServiceProvider"
+                    ]
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "ArsoftModules\\NotaGenerator\\": "src/"
+                    "ArsoftModules\\Keuangan\\": "src/"
                 }
             },
             "license": [
-                "-"
+                "MIT"
             ],
             "authors": [
                 {
@@ -46,12 +42,12 @@
                     "email": "kalingrowo@gmail.com"
                 }
             ],
-            "description": "nota generator using table and database",
+            "description": "modul untuk mengelola data keuangan mulai dari penjurnalan, akun keuangan, hingga laporan-laporan terkait keuangan",
             "support": {
-                "source": "https://github.com/developer-arsoft/nota-generator/tree/main",
-                "issues": "https://github.com/developer-arsoft/nota-generator/issues"
+                "source": "https://github.com/developer-arsoft/keuangan/tree/mutiaraberlian",
+                "issues": "https://github.com/developer-arsoft/keuangan/issues"
             },
-            "time": "2021-03-03T03:09:32+00:00"
+            "time": "2021-03-04T09:26:45+00:00"
         },
         {
             "name": "asm89/stack-cors",
@@ -941,16 +937,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v8.30.0",
+            "version": "v8.30.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "81ef9850cc388f2f92b868fb35ffb76f0c9a0f46"
+                "reference": "ab7e1c19ee0403e15fc59983b7ccb86d85db45e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/81ef9850cc388f2f92b868fb35ffb76f0c9a0f46",
-                "reference": "81ef9850cc388f2f92b868fb35ffb76f0c9a0f46",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ab7e1c19ee0403e15fc59983b7ccb86d85db45e6",
+                "reference": "ab7e1c19ee0403e15fc59983b7ccb86d85db45e6",
                 "shasum": ""
             },
             "require": {
@@ -1105,7 +1101,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-03-02T14:28:44+00:00"
+            "time": "2021-03-03T14:59:13+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -5048,16 +5044,16 @@
         },
         {
             "name": "facade/ignition",
-            "version": "2.5.13",
+            "version": "2.5.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/ignition.git",
-                "reference": "5e9ef386aaad9985cee2ac23281a27568d083b7e"
+                "reference": "17097f7a83e200d90d1cf9f4d1b35c1001513a47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/5e9ef386aaad9985cee2ac23281a27568d083b7e",
-                "reference": "5e9ef386aaad9985cee2ac23281a27568d083b7e",
+                "url": "https://api.github.com/repos/facade/ignition/zipball/17097f7a83e200d90d1cf9f4d1b35c1001513a47",
+                "reference": "17097f7a83e200d90d1cf9f4d1b35c1001513a47",
                 "shasum": ""
             },
             "require": {
@@ -5121,7 +5117,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-            "time": "2021-02-16T12:46:19+00:00"
+            "time": "2021-03-04T08:48:01+00:00"
         },
         {
             "name": "facade/ignition-contracts",
@@ -5352,16 +5348,16 @@
         },
         {
             "name": "laravel/sail",
-            "version": "v1.4.4",
+            "version": "v1.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sail.git",
-                "reference": "67b76f430f8870f5a2384db5c87ff8321154e077"
+                "reference": "59ee7e2b2efeb644eabea719186db91d11666733"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/67b76f430f8870f5a2384db5c87ff8321154e077",
-                "reference": "67b76f430f8870f5a2384db5c87ff8321154e077",
+                "url": "https://api.github.com/repos/laravel/sail/zipball/59ee7e2b2efeb644eabea719186db91d11666733",
+                "reference": "59ee7e2b2efeb644eabea719186db91d11666733",
                 "shasum": ""
             },
             "require": {
@@ -5408,7 +5404,7 @@
                 "issues": "https://github.com/laravel/sail/issues",
                 "source": "https://github.com/laravel/sail"
             },
-            "time": "2021-03-02T16:47:59+00:00"
+            "time": "2021-03-03T15:22:44+00:00"
         },
         {
             "name": "mockery/mockery",
@@ -7403,7 +7399,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "arsoft-modules/nota-generator": 20
+        "arsoft-modules/keuangan": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('generate-nota', [MasterTestController::class, 'generateNota']);
+Route::get('laporan-aset-eta', [MasterTestController::class, 'laporanAsetEta']);
