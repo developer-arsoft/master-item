@@ -19,3 +19,4 @@ Route::get('/', function () {
 });
 
 Route::get('laporan-aset-eta', [MasterTestController::class, 'laporanAsetEta']);
+Route::get('laporan-cashflow', [MasterTestController::class, 'laporanCashflow']);
